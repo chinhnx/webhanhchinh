@@ -3,77 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container mx-auto">
-      <header class="">
-        <div class="flex items-center justify-between m-8">
-          <div class="ml-5">
-            <a href=""
-              ><img src="https://picsum.photos/200/120" alt="" class="w-3l"
-            /></a>
-          </div>
-          <div class="pr-30">
-            <h1 class="font-bold text-6xl text-red-500 text-center mb-2">
-              BẢN TIN
-            </h1>
-            <h1 class="font-bold text-5xl text-center">
-              HÀNH CHÍNH VÀ QUẢN TRỊ CÔNG
-            </h1>
-          </div>
-        </div>
-
-        <nav
-          class="flex text-[#ffff] bg-[#2D2C6C] font-semibold items-center justify-between p-3 gap-2"
+    <header>
+      <div
+        class="m-auto px-5 py-4 grid grid-cols-[1fr_4fr] items-center gap-3 max-[1000px]:grid-cols-[60px_1fr_60px]"
+      >
+        <div
+          class="hidden max-[1000px]:flex items-center justify-start relative"
         >
-          <!-- Container nền xanh (Dark Blue) -->
-          <div
-            class="bg-[#2A2B6A] p-1 flex justify-center items-center inline-block"
+          <button
+            id="menu-btn"
+            class="text-[#2B2E6C] p-2 hover:bg-gray-100 rounded-lg transition-colors focus:outline-none"
+            aria-label="Toggle Menu"
           >
-            <!-- Vòng tròn trắng chứa icon -->
-            <div
-              class="bg-white rounded-full p-3 flex justify-center items-center w-12 h-12 shadow-sm"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <!-- SVG Icon Home -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#2A2B6A"
-                class="w-6 h-6"
-              >
-                <path
-                  d="M11.47 3.822a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 1-1.06 1.06L12 5.44l-8.16 8.16a.75.75 0 0 1-1.06-1.06l8.69-8.69Z"
-                />
-                <path
-                  d="M12 5.437l7.5 7.5a.15.15 0 0 1 .06.12v6.563a1.5 1.5 0 0 1-1.5 1.5h-3a.75.75 0 0 1-.75-.75V15a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75v5.25a.75.75 0 0 1-.75.75h-3a1.5 1.5 0 0 1-1.5-1.5V13.06c0-.045.018-.087.051-.12l7.5-7.5Z"
-                />
-              </svg>
-            </div>
-          </div>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
 
-          <ul class="flex gap-35">
-            <li class="text-[14px]">CƠ CHẾ - CHÍNH SÁCH</li>
-            <li class="text-[14px]">THÔNG TIN - DỮ LIỆU</li>
-            <li class="text-[14px]">MÔ HÌNH - KINH NGHIỆM</li>
-            <li class="text-[14px]">TRAO ĐỔI - THẢO LUẬN</li>
-            <li class="text-[14px]">TÀI LIỆU, SÁCH, HỌC LIỆU</li>
-          </ul>
-          <div>
-            <a href=""
-              ><img src="https://picsum.photos/50/50" alt="logo-search"
-            /></a>
+          <div
+            id="mobile-menu"
+            class="hidden absolute top-full left-0 mt-2 w-64 bg-[#2B2E6C] rounded-lg shadow-xl z-50 overflow-hidden border border-blue-900"
+          >
+            <ul
+              class="flex flex-col text-left py-2 text-sm font-semibold tracking-wide text-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3 border-b border-blue-900/50"
+                  >CƠ CHẾ - CHÍNH SÁCH</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3 border-b border-blue-900/50"
+                  >THÔNG TIN - DỮ LIỆU</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3 border-b border-blue-900/50"
+                  >MÔ HÌNH - KINH NGHIỆM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3 border-b border-blue-900/50"
+                  >TRAO ĐỔI - THẢO LUẬN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3"
+                  >TÀI LIỆU, SÁCH, HỌC LIỆU</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
-        <div class="flex justify-center items-center">
-          <span class="text-yellow-400 text-xl">⭐</span>
-          <h3 class="text-[#FF0000] font-semibold text-[25px] text-center p-1">
-            Chạy chữ thông tin diễn đàn hành chính và quản trị công
-          </h3>
-          <span class="text-yellow-400 text-xl">⭐</span>
         </div>
-        <hr class="border border-red-500" />
-      </header>
+
+        <div
+          class="flex justify-start max-[1535px]:justify-center max-[1000px]:justify-center"
+        >
+          <img
+            src="./img/image 27.png"
+            alt="Logo"
+            class="w-full max-w-[200px] max-[1535px]:max-w-[150px] object-contain"
+          />
+        </div>
+
+        <div class="text-center font-bold text-3xl max-[1000px]:hidden">
+          <p class="text-[#EF1824]">
+            BẢN TIN
+            <span class="block text-[#2D2C6C] mt-2"
+              >HÀNH CHÍNH VÀ QUẢN TRỊ CÔNG</span
+            >
+          </p>
+        </div>
+
+        <div class="hidden max-[1000px]:block w-[60px]"></div>
+      </div>
+
+      <div
+        class="hidden max-[1000px]:block text-center font-bold text-xl max-[500px]:text-lg px-5 pb-4"
+      >
+        <p class="text-[#EF1824]">
+          BẢN TIN
+          <span class="text-[#2D2C6C] mt-1">HÀNH CHÍNH VÀ QUẢN TRỊ CÔNG</span>
+        </p>
+      </div>
+
+      <div class="bg-[#2D2C6C] text-white font-sans max-[1000px]:hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <ul
+            class="flex items-center justify-between py-3.5 text-sm font-semibold tracking-wide"
+          >
+            <div class="flex items-center gap-16">
+              <li class="flex-shrink-0">
+                <a
+                  href="#"
+                  class="bg-white text-[#2D2C6C] w-7 h-7 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors shadow-sm"
+                >
+                  <i class="fas fa-home text-xs"></i>
+                </a>
+              </li>
+
+              <li class="whitespace-nowrap">
+                <a
+                  href="#"
+                  class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]"
+                  >CƠ CHẾ - CHÍNH SÁCH</a
+                >
+              </li>
+              <li class="whitespace-nowrap">
+                <a
+                  href="#"
+                  class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]"
+                  >THÔNG TIN - DỮ LIỆU</a
+                >
+              </li>
+              <li class="whitespace-nowrap">
+                <a
+                  href="#"
+                  class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]"
+                  >MÔ HÌNH - KINH NGHIỆM</a
+                >
+              </li>
+              <li class="whitespace-nowrap">
+                <a
+                  href="#"
+                  class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]"
+                  >TRAO ĐỔI - THẢO LUẬN</a
+                >
+              </li>
+              <li class="whitespace-nowrap">
+                <a
+                  href="#"
+                  class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]"
+                  >TÀI LIỆU, SÁCH, HỌC LIỆU</a
+                >
+              </li>
+            </div>
+
+            <li class="flex-shrink-0">
+              <button
+                type="button"
+                class="bg-white/10 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10 focus:outline-none"
+                aria-label="Search"
+              >
+                <i class="fas fa-search text-xs"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container mx-auto">
       <main>
         <section class="mt-20 px-15">
           <div class="overflow-visible">
