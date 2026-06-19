@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="m-auto px-5 py-4 grid grid-cols-[1fr_4fr] items-center gap-3 max-[1000px]:grid-cols-[60px_1fr_60px]"
+      >
+        <div
+          class="hidden max-[1000px]:flex items-center justify-start relative"
+        >
+          <button
+            id="menu-btn"
+            class="text-[#2B2E6C] p-2 hover:bg-gray-100 rounded-lg transition-colors focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hidden absolute top-full left-0 mt-2 w-64 bg-[#2B2E6C] rounded-lg shadow-xl z-50 overflow-hidden border border-blue-900"
+          >
+            <ul
+              class="flex flex-col text-left py-2 text-sm font-semibold tracking-wide text-white"
+            >
+              <li>
+                <a href="#" class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3 border-b border-blue-900/50">CƠ CHẾ - CHÍNH SÁCH</a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3 border-b border-blue-900/50">THÔNG TIN - DỮ LIỆU</a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3 border-b border-blue-900/50">MÔ HÌNH - KINH NGHIỆM</a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3 border-b border-blue-900/50">TRAO ĐỔI - THẢO LUẬN</a>
+              </li>
+              <li>
+                <a href="#" class="hover:bg-[#1E204A] transition-colors uppercase block px-4 py-3">TÀI LIỆU, SÁCH, HỌC LIỆU</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-start max-[1535px]:justify-center max-[1000px]:justify-center"
+        >
+          <img
+            src="./img/image 27.png"
+            alt="Logo"
+            class="w-full max-w-[200px] max-[1535px]:max-w-[150px] object-contain"
+          />
+        </div>
+
+        <div class="text-center font-bold text-3xl max-[1000px]:hidden">
+          <p class="text-[#EF1824]">
+            BẢN TIN
+            <span class="block text-[#2D2C6C] mt-2"
+              >HÀNH CHÍNH VÀ QUẢN TRỊ CÔNG</span
+            >
+          </p>
+        </div>
+
+        <div class="hidden max-[1000px]:block w-[60px]"></div>
+      </div>
+
+      <div
+        class="hidden max-[1000px]:block text-center font-bold text-xl max-[500px]:text-lg px-5 pb-4"
+      >
+        <p class="text-[#EF1824]">
+          BẢN TIN
+          <span class="text-[#2D2C6C] mt-1">HÀNH CHÍNH VÀ QUẢN TRỊ CÔNG</span>
+        </p>
+      </div>
+
+  <div class="bg-[#2D2C6C] text-white font-sans max-[1000px]:hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <ul class="flex items-center justify-between py-3.5 text-sm font-semibold tracking-wide">
+      
+      <div class="flex items-center gap-16">
+        <li class="flex-shrink-0">
+          <a
+            href="#"
+            class="bg-white text-[#2D2C6C] w-7 h-7 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors shadow-sm"
+          >
+            <i class="fas fa-home text-xs"></i>
+          </a>
+        </li>
+        
+        <li class="whitespace-nowrap">
+          <a href="#" class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]">CƠ CHẾ - CHÍNH SÁCH</a>
+        </li>
+        <li class="whitespace-nowrap">
+          <a href="#" class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]">THÔNG TIN - DỮ LIỆU</a>
+        </li>
+        <li class="whitespace-nowrap">
+          <a href="#" class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]">MÔ HÌNH - KINH NGHIỆM</a>
+        </li>
+        <li class="whitespace-nowrap">
+          <a href="#" class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]">TRAO ĐỔI - THẢO LUẬN</a>
+        </li>
+        <li class="whitespace-nowrap">
+          <a href="#" class="hover:text-gray-300 transition-colors uppercase block py-1 text-[13px]">TÀI LIỆU, SÁCH, HỌC LIỆU</a>
+        </li>
+      </div>
+
+      <li class="flex-shrink-0">
+        <button
+          type="button"
+          class="bg-white/10 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10 focus:outline-none"
+          aria-label="Search"
+        >
+          <i class="fas fa-search text-xs"></i>
+        </button>
+      </li>
+
+    </ul>
+  </div>
+</div>
+    </header>
+
+    <section>
+      <div class="max-w-7xl mx-auto px-4 py-6 font-sans">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6"
+        >
+          <div
+            class="bg-[#2B2E6C] text-white font-bold px-6 py-2.5 rounded-full shadow-md text-sm tracking-wide uppercase"
+          >
+            THÔNG TIN - DỮ LIỆU
+          </div>
+
+          <div class="relative w-full md:w-80">
+            <input
+              type="text"
+              placeholder="Tìm kiếm trong chuyên mục...."
+              class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:border-[#2B2E6C]"
+            />
+            <span
+              class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer hover:text-gray-600"
+            >
+              <i class="fas fa-search text-base"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-[1fr_280px] gap-6 max-[1024px]:grid-cols-1 items-stretch">
+          <div
+            class="grid grid-cols-[11fr_9fr] bg-[#F2F2F2] rounded overflow-hidden max-[640px]:grid-cols-1 shadow-sm h-full"
+          >
+            <div class="w-full h-full min-h-[250px]">
+              <img
+                src="https://picsum.photos/800/600"
+                alt="Lễ khai trương"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6 flex items-start">
+              <a
+                href="#"
+                class="text-xl font-bold text-black hover:text-[#2B2E6C] transition-colors leading-snug"
+              >
+                Kho dữ liệu số quốc gia: Nền tảng cho quản trị hiện đại
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="border border-gray-200 rounded overflow-hidden shadow-sm bg-white h-full flex flex-col"
+          >
+            <div
+              class="bg-[#EAEAEA] text-[#555555] font-bold px-4 py-3 text-base flex-shrink-0"
+            >
+              Khám phá thêm
+            </div>
+            <ul class="flex flex-col text-sm text-gray-700 flex-1">
+              <li class="border-b border-gray-100 last:border-none flex-1 flex">
+                <a
+                  href="#"
+                  class="flex justify-between items-center px-4 py-3 hover:bg-gray-50 hover:text-[#2B2E6C] transition-colors font-medium w-full"
+                >
+                  <span>Thông tin - Dữ liệu</span>
+                  <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+              </li>
+              <li class="border-b border-gray-100 last:border-none flex-1 flex">
+                <a
+                  href="#"
+                  class="flex justify-between items-center px-4 py-3 hover:bg-gray-50 hover:text-[#2B2E6C] transition-colors font-medium w-full"
+                >
+                  <span>Mô hình - Kinh nghiệm</span>
+                  <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+              </li>
+              <li class="border-b border-gray-100 last:border-none flex-1 flex">
+                <a
+                  href="#"
+                  class="flex justify-between items-center px-4 py-3 hover:bg-gray-50 hover:text-[#2B2E6C] transition-colors font-medium w-full"
+                >
+                  <span>Trao đổi - Thảo luận</span>
+                  <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+              </li>
+              <li class="border-b border-gray-100 last:border-none flex-1 flex">
+                <a
+                  href="#"
+                  class="flex justify-between items-center px-4 py-3 hover:bg-gray-50 hover:text-[#2B2E6C] transition-colors font-medium w-full"
+                >
+                  <span>Tài liệu, sách, học liệu</span>
+                  <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+              </li>
+              <li class="border-b border-gray-100 last:border-none flex-1 flex">
+                <a
+                  href="#"
+                  class="flex justify-between items-center px-4 py-3 hover:bg-gray-50 hover:text-[#2B2E6C] transition-colors font-medium w-full"
+                >
+                  <span>Multimedia</span>
+                  <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+              </li>
+              <li class="border-b border-gray-100 last:border-none flex-1 flex">
+                <a
+                  href="#"
+                  class="flex justify-between items-center px-4 py-3 hover:bg-gray-50 hover:text-[#2B2E6C] transition-colors font-medium w-full"
+                >
+                  <span>Nổi bật</span>
+                  <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-7xl mx-auto px-4 py-8 font-sans">
+        <div
+          class="grid grid-cols-3 gap-8 max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1"
+        >
+          <div class="bg-white flex flex-col justify-between group cursor-pointer">
+            <div>
+              <div class="overflow-hidden rounded-sm aspect-[4/3] w-full bg-gray-100">
+                <img
+                  src="https://picsum.photos/600/450"
+                  alt="Kết nối dữ liệu"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 class="mt-4 text-[15px] font-bold text-black leading-snug line-clamp-2 group-hover:text-[#2B2E6C] transition-colors">
+                Kết nối dữ liệu phục vụ cải cách thủ tục hành chính
+              </h3>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="inline-flex items-center text-xs text-gray-400 font-medium hover:text-[#2B2E6C] transition-colors">
+                Xem thêm <span class="ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white flex flex-col justify-between group cursor-pointer">
+            <div>
+              <div class="overflow-hidden rounded-sm aspect-[4/3] w-full bg-gray-100">
+                <img
+                  src="https://picsum.photos/600/450"
+                  alt="Khai thác dữ liệu"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 class="mt-4 text-[15px] font-bold text-black leading-snug line-clamp-2 group-hover:text-[#2B2E6C] transition-colors">
+                Khai thác dữ liệu dân cư nâng cao chất lượng dịch vụ công
+              </h3>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="inline-flex items-center text-xs text-gray-400 font-medium hover:text-[#2B2E6C] transition-colors">
+                Xem thêm <span class="ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white flex flex-col justify-between group cursor-pointer">
+            <div>
+              <div class="overflow-hidden rounded-sm aspect-[4/3] w-full bg-gray-100">
+                <img
+                  src="https://picsum.photos/600/450"
+                  alt="Trung tâm điều hành"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 class="mt-4 text-[15px] font-bold text-black leading-snug line-clamp-2 group-hover:text-[#2B2E6C] transition-colors">
+                Trung tâm điều hành thông minh hỗ trợ quản trị địa phương
+              </h3>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="inline-flex items-center text-xs text-gray-400 font-medium hover:text-[#2B2E6C] transition-colors">
+                Xem thêm <span class="ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-7xl mx-auto px-4 py-8 font-sans flex flex-col gap-8">
+        <div class="grid grid-cols-[3fr_1fr] gap-8 items-start border-b border-gray-200 pb-8 max-[1024px]:grid-cols-1 max-[1024px]:gap-4">
+          <div>
+            <h2 class="text-lg font-bold text-black mb-3 hover:text-[#2B2E6C] cursor-pointer transition-colors">
+              Dữ liệu mở thúc đẩy minh bạch và đổi mới sáng tạo
+            </h2>
+            <div class="grid grid-cols-[35fr_65fr] gap-6 max-[640px]:grid-cols-1">
+              <div class="aspect-[16/10] overflow-hidden rounded-sm bg-gray-100">
+                <img
+                  src="https://picsum.photos/800/500"
+                  alt="Dữ liệu mở"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex flex-col justify-between items-start">
+                <p class="text-gray-600 text-sm leading-relaxed line-clamp-4">
+                  Việc công khai và chia sẻ dữ liệu giữa các cơ quan nhà nước giúp nâng cao tính minh bạch, hỗ trợ người dân, doanh nghiệp tiếp cận thông tin và thúc đẩy phát triển các dịch vụ số.
+                </p>
+                <a href="#" class="mt-3 text-xs text-gray-400 font-medium hover:text-[#2B2E6C] transition-colors inline-flex items-center">
+                  Xem thêm <span class="ml-1">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 rounded overflow-hidden shadow-sm bg-white flex flex-col justify-between max-[1024px]:hidden">
+            <div>
+              <div class="bg-[#2B2E6C] text-white font-bold px-4 py-2 text-sm uppercase tracking-wide">
+                Bình luận
+              </div>
+              <div class="p-4 flex flex-col gap-3 border-b border-gray-100">
+                <div class="w-full bg-gray-50 p-3 rounded border border-gray-100">
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <div class="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-[#2B2E6C]">
+                      T
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-gray-800">Nguyễn Thị Hướng</div>
+                      <div class="text-[9px] text-gray-400">Trường hành chính - Hà Nội</div>
+                    </div>
+                  </div>
+                  <p class="text-xs text-gray-600 leading-normal line-clamp-3">
+                    "Tin tức rất bổ ích, việc liên thông dữ liệu sẽ là bước ngoặt lớn giúp tối ưu hóa bộ máy quản lý..."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form class="p-4 bg-gray-50/50 flex flex-col gap-2">
+              <textarea rows="2" placeholder="Viết bình luận của bạn tại đây..." class="w-full p-2 text-xs border border-gray-200 rounded resize-none focus:outline-none focus:border-[#2B2E6C]" required></textarea>
+              <button type="submit" class="w-full bg-[#2B2E6C] text-white text-xs font-semibold py-1.5 rounded hover:bg-[#1E204A] transition-colors mt-1">Gửi bình luận</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-[3fr_1fr] gap-8 items-start border-b border-gray-200 pb-8 max-[1024px]:grid-cols-1 max-[1024px]:gap-4">
+          <div>
+            <h2 class="text-lg font-bold text-black mb-3 hover:text-[#2B2E6C] cursor-pointer transition-colors">
+              Đẩy mạnh kết nối, chia sẻ dữ liệu giữa các cơ quan nhà nước
+            </h2>
+            <div class="grid grid-cols-[35fr_65fr] gap-6 max-[640px]:grid-cols-1">
+              <div class="aspect-[16/10] overflow-hidden rounded-sm bg-gray-100">
+                <img
+                  src="https://picsum.photos/800/500"
+                  alt="Kết nối dữ liệu"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex flex-col justify-between items-start">
+                <p class="text-gray-600 text-sm leading-relaxed line-clamp-4">
+                  Các bộ, ngành và địa phương đang tăng cường liên thông dữ liệu nhằm giảm thủ tục hành chính, nâng cao hiệu quả xử lý công việc và phục vụ người dân tốt hơn.
+                </p>
+                <a href="#" class="mt-3 text-xs text-gray-400 font-medium hover:text-[#2B2E6C] transition-colors inline-flex items-center">
+                  Xem thêm <span class="ml-1">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-gray-200 rounded overflow-hidden shadow-sm bg-white flex flex-col justify-between max-[1024px]:hidden">
+            <div>
+              <div class="bg-[#2B2E6C] text-white font-bold px-4 py-2 text-sm uppercase tracking-wide">
+                Bình luận
+              </div>
+              <div class="p-4 flex flex-col gap-3 border-b border-gray-100">
+                <div class="w-full bg-gray-50 p-3 rounded border border-gray-100">
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <div class="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-[#2B2E6C]">
+                      H
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-gray-800">Trần Văn Hoàng</div>
+                      <div class="text-[9px] text-gray-400">Chuyên viên CNTT</div>
+                    </div>
+                  </div>
+                  <p class="text-xs text-gray-600 leading-normal line-clamp-3">
+                    "Ứng dụng AI vào hành chính công là xu hướng tất yếu, mong rằng giải pháp sẽ sớm triển khai rộng rãi."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form class="p-4 bg-gray-50/50 flex flex-col gap-2">
+              <textarea rows="2" placeholder="Viết bình luận của bạn tại đây..." class="w-full p-2 text-xs border border-gray-200 rounded resize-none focus:outline-none focus:border-[#2B2E6C]" required></textarea>
+              <button type="submit" class="w-full bg-[#2B2E6C] text-white text-xs font-semibold py-1.5 rounded hover:bg-[#1E204A] transition-colors mt-1">Gửi bình luận</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!mobileMenu.contains(e.target) && e.target !== menuBtn) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+  </script>
+</html>
