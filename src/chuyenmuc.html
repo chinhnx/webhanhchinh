@@ -1,13 +1,840 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline bg-red-500">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <header class="">
+        <div class="flex items-center justify-between m-8">
+          <div class="ml-5">
+            <a href=""
+              ><img src="https://picsum.photos/200/120" alt="" class="w-3l"
+            /></a>
+          </div>
+          <div class="pr-30">
+            <h1 class="font-bold text-6xl text-red-500 text-center mb-2">
+              BẢN TIN
+            </h1>
+            <h1 class="font-bold text-5xl text-center">
+              HÀNH CHÍNH VÀ QUẢN TRỊ CÔNG
+            </h1>
+          </div>
+        </div>
+
+        <nav
+          class="flex text-[#ffff] bg-[#2D2C6C] font-semibold items-center justify-between p-3 gap-2"
+        >
+          <!-- Container nền xanh (Dark Blue) -->
+          <div
+            class="bg-[#2A2B6A] p-1 flex justify-center items-center inline-block"
+          >
+            <!-- Vòng tròn trắng chứa icon -->
+            <div
+              class="bg-white rounded-full p-3 flex justify-center items-center w-12 h-12 shadow-sm"
+            >
+              <!-- SVG Icon Home -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#2A2B6A"
+                class="w-6 h-6"
+              >
+                <path
+                  d="M11.47 3.822a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 1-1.06 1.06L12 5.44l-8.16 8.16a.75.75 0 0 1-1.06-1.06l8.69-8.69Z"
+                />
+                <path
+                  d="M12 5.437l7.5 7.5a.15.15 0 0 1 .06.12v6.563a1.5 1.5 0 0 1-1.5 1.5h-3a.75.75 0 0 1-.75-.75V15a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75v5.25a.75.75 0 0 1-.75.75h-3a1.5 1.5 0 0 1-1.5-1.5V13.06c0-.045.018-.087.051-.12l7.5-7.5Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <ul class="flex gap-35">
+            <li class="text-[14px]">CƠ CHẾ - CHÍNH SÁCH</li>
+            <li class="text-[14px]">THÔNG TIN - DỮ LIỆU</li>
+            <li class="text-[14px]">MÔ HÌNH - KINH NGHIỆM</li>
+            <li class="text-[14px]">TRAO ĐỔI - THẢO LUẬN</li>
+            <li class="text-[14px]">TÀI LIỆU, SÁCH, HỌC LIỆU</li>
+          </ul>
+          <div>
+            <a href=""
+              ><img src="https://picsum.photos/50/50" alt="logo-search"
+            /></a>
+          </div>
+        </nav>
+        <div class="flex justify-center items-center">
+          <span class="text-yellow-400 text-xl">⭐</span>
+          <h3 class="text-[#FF0000] font-semibold text-[25px] text-center p-1">
+            Chạy chữ thông tin diễn đàn hành chính và quản trị công
+          </h3>
+          <span class="text-yellow-400 text-xl">⭐</span>
+        </div>
+        <hr class="border border-red-500" />
+      </header>
+      <main>
+        <section class="mt-20 px-15">
+          <div class="overflow-visible">
+            <a
+              href=""
+              class="inline-block bg-[#2D2C6C] rounded-2xl px-10 py-3 text-white font-bold shadow-[0_5px_15px_rgba(0,0,0,0.5)]"
+            >
+              CƠ CHẾ - CHÍNH SÁCH
+            </a>
+          </div>
+          <div class="relative mt-10 grid grid-cols-2 gap-x-20 gap-y-8 mb-10">
+            <div
+              class="hidden md:block absolute -top-1 -bottom-1 left-1/2 w-[2px] bg-[#1e3a8a] -translate-x-1/2"
+            ></div>
+
+            <div class="flex items-center bg-[#f0f0f0] p-6 gap-8 shadow-sm">
+              <div class="w-[45%] shrink-0">
+                <a href="#"
+                  ><img
+                    class="w-full h-auto block object-cover"
+                    src="https://picsum.photos/400/250"
+                    alt="Bộ máy tổ chức"
+                /></a>
+              </div>
+              <div class="flex flex-col items-start gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-black tracking-wide">
+                  Bộ máy tổ chức
+                </h1>
+                <a
+                  href="#"
+                  class="mt-15 bg-[#a62b24] hover:bg-[#85221c] text-white font-bold px-8 py-2 text-sm rounded-sm uppercase transition-colors duration-200"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center bg-[#f0f0f0] p-6 gap-8 shadow-sm">
+              <div class="w-[45%] shrink-0">
+                <a href="#"
+                  ><img
+                    class="w-full h-auto block object-cover"
+                    src="https://picsum.photos/400/250"
+                    alt="Bộ máy tổ chức"
+                /></a>
+              </div>
+              <div class="flex flex-col items-start gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-black tracking-wide">
+                  Nhân lực
+                </h1>
+                <a
+                  href="#"
+                  class="mt-15 bg-[#a62b24] hover:bg-[#85221c] text-white font-bold px-8 py-2.5 text-sm rounded-sm uppercase transition-colors duration-200"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center bg-[#f0f0f0] p-6 gap-8 shadow-sm">
+              <div class="w-[45%] shrink-0">
+                <a href="#"
+                  ><img
+                    class="w-full h-auto block object-cover"
+                    src="https://picsum.photos/400/250"
+                    alt="Bộ máy tổ chức"
+                /></a>
+              </div>
+              <div class="flex flex-col items-start gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-black tracking-wide">
+                  Kinh tế
+                </h1>
+                <a
+                  href="#"
+                  class="mt-15 bg-[#a62b24] hover:bg-[#85221c] text-white font-bold px-8 py-2.5 text-sm rounded-sm uppercase transition-colors duration-200"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center bg-[#f0f0f0] p-6 gap-8 shadow-sm">
+              <div class="w-[45%] shrink-0">
+                <a href="#"
+                  ><img
+                    class="w-full h-auto block object-cover"
+                    src="https://picsum.photos/400/250"
+                    alt="Bộ máy tổ chức"
+                /></a>
+              </div>
+              <div class="flex flex-col items-start gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-black tracking-wide">
+                  Văn hóa - Xã hội
+                </h1>
+                <a
+                  href="#"
+                  class="mt-15 bg-[#a62b24] hover:bg-[#85221c] text-white font-bold px-8 py-2.5 text-sm rounded-sm uppercase transition-colors duration-200"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center bg-[#f0f0f0] p-6 gap-8 shadow-sm">
+              <div class="w-[45%] shrink-0">
+                <a href="#"
+                  ><img
+                    class="w-full h-auto block object-cover"
+                    src="https://picsum.photos/400/250"
+                    alt="Bộ máy tổ chức"
+                /></a>
+              </div>
+              <div class="flex flex-col items-start gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-black tracking-wide">
+                  Tài nguyên Môi trường
+                </h1>
+                <a
+                  href="#"
+                  class="mt-15 bg-[#a62b24] hover:bg-[#85221c] text-white font-bold px-8 py-2.5 text-sm rounded-sm uppercase transition-colors duration-200"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center bg-[#f0f0f0] p-6 gap-8 shadow-sm">
+              <div class="w-[45%] shrink-0">
+                <a href="#"
+                  ><img
+                    class="w-full h-auto block object-cover"
+                    src="https://picsum.photos/400/250"
+                    alt="Bộ máy tổ chức"
+                /></a>
+              </div>
+              <div class="flex flex-col items-start gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-black tracking-wide">
+                  Xây dựng, giao thông, quy hoạch
+                </h1>
+                <a
+                  href="#"
+                  class="mt-9 bg-[#a62b24] hover:bg-[#85221c] text-white font-bold px-8 py-2.5 text-sm rounded-sm uppercase transition-colors duration-200"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center bg-[#f0f0f0] p-6 gap-8 shadow-sm">
+              <div class="w-[45%] shrink-0">
+                <a href="#"
+                  ><img
+                    class="w-full h-auto block object-cover"
+                    src="https://picsum.photos/400/250"
+                    alt="Bộ máy tổ chức"
+                /></a>
+              </div>
+              <div class="flex flex-col items-start gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-black tracking-wide">
+                  Giáo dục
+                </h1>
+                <a
+                  href="#"
+                  class="mt-14 bg-[#a62b24] hover:bg-[#85221c] text-white font-bold px-8 py-2.5 text-sm rounded-sm uppercase transition-colors duration-200"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center bg-[#f0f0f0] p-6 gap-8 shadow-sm">
+              <div class="w-[45%] shrink-0">
+                <a href="#"
+                  ><img
+                    class="w-full h-auto block object-cover"
+                    src="https://picsum.photos/400/250"
+                    alt="Bộ máy tổ chức"
+                /></a>
+              </div>
+              <div class="flex flex-col items-start gap-10 flex-1">
+                <h1 class="text-2xl font-bold text-black tracking-wide">
+                  Y tế
+                </h1>
+                <a
+                  href="#"
+                  class="mt-14 bg-[#a62b24] hover:bg-[#85221c] text-white font-bold px-8 py-2.5 text-sm rounded-sm uppercase transition-colors duration-200"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <hr class="border border-[#33449C]" />
+          <div>
+            <div class="bg-[#33449C]">
+              <h2 class="font-semibold text-[#ffff] px-5 py-3">
+                BÌNH LUẬN NỔI BẬT
+              </h2>
+            </div>
+            <div
+              class="w-full bg-[#f8fafc] py-10 flex justify-center items-center"
+            >
+              <div
+                class="w-full max-w-[1800px] px-[50px] flex flex-col xl:flex-row justify-center gap-6 mb-10"
+              >
+                <!-- Thẻ 1: Nguyễn Thị Hương (Đã đổi thành max-w-[750px]) -->
+                <div
+                  class="w-full max-w-[750px] bg-white border border-gray-200 border-l-[6px] border-l-red-500 rounded-xl p-6 shadow-sm font-sans flex flex-col justify-between"
+                >
+                  <div>
+                    <div class="flex items-start justify-between mb-4">
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="w-12 h-12 bg-[#51429d] text-white rounded-full flex items-center justify-center text-xl font-semibold flex-shrink-0"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-5 h-5"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4
+                            class="text-[17px] font-bold text-gray-800 leading-tight"
+                          >
+                            Nguyễn Thị Hương
+                          </h4>
+                          <p class="text-[13px] text-gray-500 mt-0.5">
+                            Trưởng phòng Hành chính - TP Hà Nội
+                          </p>
+                          <span class="text-[12px] text-gray-400 block mt-0.5"
+                            >2 ngày trước</span
+                          >
+                        </div>
+                      </div>
+                      <div class="flex gap-0.5 text-lg text-yellow-400">
+                        ★<span>★</span><span>★</span><span>★</span
+                        ><span>★</span>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-700 text-[14.5px] leading-relaxed mb-6 line-clamp-3 overflow-hidden text-ellipsis display-webkit-box webkit-box-orient-vertical"
+                    >
+                      "Bản tin này rất hữu ích! Những thông tin cập nhật về cải
+                      cách hành chính giúp chúng tôi nắm bắt kịp thời các chính
+                      sách mới. Đặc biệt là phần hướng dẫn thực hiện rất chi
+                      tiết và dễ hiểu."
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-4 text-xs text-gray-500 mt-auto"
+                  >
+                    <button
+                      class="flex items-center gap-1 hover:text-blue-600 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904M14.25 9.14v1.25M6.633 10.25H4.5A1.5 1.5 0 0 0 3 11.75v8c0 .828.672 1.5 1.5 1.5h1.683c.747 0 1.44-.394 1.825-1.037l.53-.884m-1.2-8.328a4.503 4.503 0 0 0-1.2-1.328"
+                        />
+                      </svg>
+                      <span>24</span>
+                    </button>
+                    <button
+                      class="flex items-center gap-1 hover:text-blue-600 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                        />
+                      </svg>
+                      <span>Trả lời</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Thẻ 2: Trần Minh Tuấn (Đã đổi thành max-w-[750px]) -->
+                <div
+                  class="w-full max-w-[750px] bg-white border border-gray-200 border-l-[6px] border-l-[#41388a] rounded-xl p-6 shadow-sm font-sans flex flex-col justify-between"
+                >
+                  <div>
+                    <div class="flex items-start justify-between mb-4">
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="w-12 h-12 bg-[#c2413a] text-white rounded-full flex items-center justify-center text-xl font-semibold flex-shrink-0"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-5 h-5"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4
+                            class="text-[17px] font-bold text-gray-800 leading-tight"
+                          >
+                            Trần Minh Tuấn
+                          </h4>
+                          <p class="text-[13px] text-gray-500 mt-0.5">
+                            Chuyên viên Pháp lý - Bộ Nội vụ
+                          </p>
+                          <span class="text-[12px] text-gray-400 block mt-0.5"
+                            >5 ngày trước</span
+                          >
+                        </div>
+                      </div>
+                      <div class="flex gap-0.5 text-lg text-yellow-400">
+                        ★<span>★</span><span>★</span><span>★</span
+                        ><span>★</span>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-700 text-[14.5px] leading-relaxed mb-6 line-clamp-3 overflow-hidden text-ellipsis display-webkit-box webkit-box-orient-vertical"
+                    >
+                      "Chất lượng nội dung xuất sắc! Mỗi bài viết đều được biên
+                      soạn kỹ lưỡng với những phân tích sâu sắc. Bản tin này đã
+                      trở thành nguồn tài liệu tham khảo chính cho đội ngũ của
+                      chúng tôi."
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-4 text-xs text-gray-500 mt-auto"
+                  >
+                    <button
+                      class="flex items-center gap-1 hover:text-blue-600 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904M14.25 9.14v1.25M6.633 10.25H4.5A1.5 1.5 0 0 0 3 11.75v8c0 .828.672 1.5 1.5 1.5h1.683c.747 0 1.44-.394 1.825-1.037l.53-.884m-1.2-8.328a4.503 4.503 0 0 0-1.2-1.328"
+                        />
+                      </svg>
+                      <span>31</span>
+                    </button>
+                    <button
+                      class="flex items-center gap-1 hover:text-blue-600 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                        />
+                      </svg>
+                      <span>Trả lời</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="duoi">
+              <div class="bg-[#33449C]">
+                <h2 class="font-semibold text-[#ffff] px-5 py-3">
+                  BÌNH LUẬN NỔI BẬT
+                </h2>
+              </div>
+              <div class="mt-10">
+                <div class="w-full max-w-[1524px] px-[50px]">
+                  <div
+                    class="w-full bg-white border border-gray-200 rounded-xl rounded-ss-xl p-8 shadow-sm font-sans flex items-start gap-5"
+                  >
+                    <div
+                      class="w-11 h-11 bg-[#4c3b93] text-white rounded-full flex items-center justify-center font-medium flex-shrink-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center gap-2 mb-1">
+                        <h3
+                          class="text-[16px] font-bold text-gray-800 capitalize leading-tight"
+                        >
+                          Lê Quốc Hùng
+                        </h3>
+                        <span
+                          class="bg-[#fce8e6] text-[#c2413a] text-[11px] font-semibold px-2 py-0.5 rounded-sm"
+                        >
+                          Tác giả
+                        </span>
+                      </div>
+
+                      <p class="text-[13px] text-gray-400 mb-3">
+                        1 ngày trước trên bài:
+                        <span
+                          class="text-gray-500 hover:underline cursor-pointer font-medium"
+                          >"Thông tư mới về cải cách hành chính 2024"</span
+                        >
+                      </p>
+
+                      <p
+                        class="text-gray-700 text-[14.5px] leading-relaxed mb-4"
+                      >
+                        "Cảm ơn bạn đã quan tâm! Thông tư này thực sự mang tính
+                        chất đột phá trong lĩnh vực cải cách hành chính. Nếu bạn
+                        có thắc mắc gì thêm, xin vui lòng liên hệ với chúng
+                        tôi."
+                      </p>
+
+                      <div
+                        class="flex items-center gap-4 text-xs text-gray-400 font-semibold"
+                      >
+                        <button
+                          class="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.8"
+                            stroke="currentColor"
+                            class="w-4 h-4"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904M14.25 9.14v1.25M6.633 10.25H4.5A1.5 1.5 0 0 0 3 11.75v8c0 .828.672 1.5 1.5 1.5h1.683c.747 0 1.44-.394 1.825-1.037l.53-.884m-1.2-8.328a4.503 4.503 0 0 0-1.2-1.328"
+                            />
+                          </svg>
+                          <span>12</span>
+                        </button>
+
+                        <button
+                          class="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.8"
+                            stroke="currentColor"
+                            class="w-4 h-4"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                            />
+                          </svg>
+                          <span>Trả lời</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full max-w-[1524px] px-[50px] mt-5">
+                  <div
+                    class="w-full bg-white border border-gray-200 rounded-xl rounded-ss-xl p-8 shadow-sm font-sans flex items-start gap-5"
+                  >
+                    <div
+                      class="w-11 h-11 bg-red-500 text-white rounded-full flex items-center justify-center font-medium flex-shrink-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center gap-2 mb-1">
+                        <h3
+                          class="text-[16px] font-bold text-gray-800 capitalize leading-tight"
+                        >
+                          Phạm Thu Hà
+                        </h3>
+                      </div>
+
+                      <p class="text-[13px] text-gray-400 mb-3">
+                        2 ngày trước trên bài:
+                        <span
+                          class="text-gray-500 hover:underline cursor-pointer font-medium"
+                          >"Kế hoạch phát triển kinh tế xã hôi."</span
+                        >
+                      </p>
+
+                      <p
+                        class="text-gray-700 text-[14.5px] leading-relaxed mb-4"
+                      >
+                        "Bài viết rất chi tiết. Tôi mong muốn có thêm các dự án
+                        cụ thể để tôi tham gia vào. "
+                      </p>
+
+                      <div
+                        class="flex items-center gap-4 text-xs text-gray-400 font-semibold"
+                      >
+                        <button
+                          class="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.8"
+                            stroke="currentColor"
+                            class="w-4 h-4"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904M14.25 9.14v1.25M6.633 10.25H4.5A1.5 1.5 0 0 0 3 11.75v8c0 .828.672 1.5 1.5 1.5h1.683c.747 0 1.44-.394 1.825-1.037l.53-.884m-1.2-8.328a4.503 4.503 0 0 0-1.2-1.328"
+                            />
+                          </svg>
+                          <span>12</span>
+                        </button>
+
+                        <button
+                          class="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.8"
+                            stroke="currentColor"
+                            class="w-4 h-4"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                            />
+                          </svg>
+                          <span>Trả lời</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full max-w-[1524px] px-[50px] mt-5">
+                  <div
+                    class="w-full bg-white border border-gray-200 rounded-xl rounded-ss-xl p-8 shadow-sm font-sans flex items-start gap-5"
+                  >
+                    <div
+                      class="w-11 h-11 bg-[#4c3b93] text-white rounded-full flex items-center justify-center font-medium flex-shrink-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center gap-2 mb-1">
+                        <h3
+                          class="text-[16px] font-bold text-gray-800 capitalize leading-tight"
+                        >
+                          Võ Thị Linh
+                        </h3>
+                      </div>
+
+                      <p class="text-[13px] text-gray-400 mb-3">
+                        3 ngày trước trên bài:
+                        <span
+                          class="text-gray-500 hover:underline cursor-pointer font-medium"
+                          >"Nâng cao an toàn dữ liệu công dân"</span
+                        >
+                      </p>
+
+                      <p
+                        class="text-gray-700 text-[14.5px] leading-relaxed mb-4"
+                      >
+                        "Phần này rất quan trọng!" Chúng tôi cần thực hiện các
+                        biện pháp bảo vệ dữ liệu theo hướng dẫn. Cảm ơn đã chia
+                        sẻ thông tin này."
+                      </p>
+
+                      <div
+                        class="flex items-center gap-4 text-xs text-gray-400 font-semibold"
+                      >
+                        <button
+                          class="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.8"
+                            stroke="currentColor"
+                            class="w-4 h-4"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904M14.25 9.14v1.25M6.633 10.25H4.5A1.5 1.5 0 0 0 3 11.75v8c0 .828.672 1.5 1.5 1.5h1.683c.747 0 1.44-.394 1.825-1.037l.53-.884m-1.2-8.328a4.503 4.503 0 0 0-1.2-1.328"
+                            />
+                          </svg>
+                          <span>12</span>
+                        </button>
+
+                        <button
+                          class="flex items-center gap-1.5 hover:text-blue-600 transition-colors"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.8"
+                            stroke="currentColor"
+                            class="w-4 h-4"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                            />
+                          </svg>
+                          <span>Trả lời</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center mt-5 mb-10">
+              <button class="p-3 bg-[#2D2C6C] text-[#ffff] rounded-2xl">
+                Xem tất cả bình luận ->
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="bg-red-500 p-3"></div>
+        <div class="flex mt-1 items-center gap-32">
+          <div class="pl-20">
+            <a href="">
+              <img src="https://picsum.photos/550/200" alt="" />
+            </a>
+          </div>
+          <div class="font-sans font-bold leading-relaxed p-5">
+            <div class="text-[20px] text-[#C83227] text-center">
+              Chịu trách nhiệm nội dung:
+            </div>
+            <div class="text-[20px] text-[#2F3E8F] text-center">
+              PGS.TS. Nguyễn Bá Chiến
+            </div>
+            <div class="text-[20px] text-[#2F3E8F]">
+              Giám đốc Học viện Hành chính và Quản trị công
+            </div>
+
+            <div class="text-[20px] text-[#C83227] text-center">
+              Ban biên tập:
+            </div>
+            <div class="text-[20px] text-[#2F3E8F] text-center">
+              TS. Pham Quang Quyền
+            </div>
+            <div class="text-[20px] text-[#2F3E8F] text-center">
+              TS. Vũ Thúy Hiền
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="block-full">
+            <p class="font-bold text-[20px] text-[#2F3E8F] text-center">
+              <span class="text-red-600">Trụ sở chính:</span> Số 77 Nguyễn Chí,
+              Giảng Võ , Hà Nội
+            </p>
+          </div>
+          <div class="flex justify-center gap-8 mt-1">
+            <div>
+              <p class="font-bold text-[20px] text-[#2F3E8F]">
+                <span class="text-red-600">Website</span> www.apag.edu.vn
+              </p>
+            </div>
+            <div>
+              <p class="font-bold text-[20px] text-[#2F3E8F]">
+                <span class="text-red-600">Email:</span>bantin@apag.deu.vn
+              </p>
+            </div>
+            <div>
+              <p class="font-bold text-[20px] text-[#2F3E8F]">
+                <span class="text-red-600">Hotline</span> (024) 38343223
+                -(024)38359843
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="font-bold text-[20px] bg-[#2F3E8F] text-[#ffff] text-center p-6"
+          >
+            Phiên bản thử nghiệm
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
